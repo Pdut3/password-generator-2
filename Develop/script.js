@@ -18,7 +18,7 @@ function passwordPrompt() {
   var includenumbers = confirm("Do you want your password to include numbers?");
   var includespecialcharacters = confirm("Do you want your password to include any special characters?");
 
-if (includelowercase === false) {
+if (includelowercase === false && includeuppercase && includelowercase && includespecialcharacters) {
   alert("You need to choose one of the characters");
   passwordPrompt()
 }
@@ -37,7 +37,7 @@ if (includelowercase === false) {
   }
   generatePassword()
 }
-passwordPrompt()
+passwordPrompt() 
 // Write password to the #password input
 function generatePassword() {
   
